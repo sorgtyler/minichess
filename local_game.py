@@ -10,9 +10,6 @@ while my_board.winner() == '?':
     # Player 1
     print 'white move: ',
     my_move = str(raw_input()) + '\n'
-
-    print 'move string is %d chars long' % len(my_move)
-
     if len(my_move) == 6:
         my_board.move(my_move)
     else:
