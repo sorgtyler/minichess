@@ -16,9 +16,9 @@ while my_board.winner() == '?':
     if len(my_move) == 6:
         my_board.move(my_move)
     else:
-        random_move = my_board.moveAlphabeta(3, 3000)
-        print 'picking random valid move %s' % random_move
-        my_board.move(random_move)
+        alpha_move = my_board.moveAlphabeta(3, 3000)
+        print 'Alpha-beta search picked: %s' % alpha_move
+        my_board.move(alpha_move)
 
     print my_board.getBoard()
 
